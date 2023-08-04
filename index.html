@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  <script src="env.js"></script>
+  <script type="module" src="index.js"></script>
+
+  <head>
+    <title>CureBot</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display+SC:wght@700&family=Poppins:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="index.css" />
+  </head>
+
+  <body>
+    <header>
+      <img src="./logo-med.png" alt="med-box" />
+      <a href="/"><span>Medi</span>Help</a>
+    </header>
+    <main>
+      <!-- The Setup -->
+      <section id="setup-container">
+        <div class="setup-inner">
+          <img src="./med-box.jpg" />
+          <div class="speech-bubble-ai" id="speech-bubble-ai">
+            <p id="movie-boss-text">
+              Welcome to CureBot, I am here to help you with your illness and
+              provide appropriate cure for it.
+            </p>
+          </div>
+        </div>
+        <div
+          class="setup-inner setup-input-container"
+          id="setup-input-container"
+        >
+          <textarea
+            id="setup-textarea"
+            placeholder="Time and health are two precious assets that we don't recognize and appreciate until they have been depleted."
+          ></textarea>
+          <button class="send-btn" id="send-btn" aria-label="send">
+            <img src="./images.jpg" alt="send" />
+          </button>
+        </div>
+      </section>
+      <!-- The Output -->
+
+      <section class="output-container" id="output-container">
+        <div id="output-img-container" class="output-img-container"></div>
+        <h1 id="output-title"></h1>
+        <h2 id="output-stars"></h2>
+        <p id="output-text"></p>
+      </section>
+    </main>
+    <footer>&copy; 2023 MediHelp All rights reserved</footer>
+  </body>
+</html>
